@@ -6,7 +6,7 @@
 - [Props, state explain](https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/?utm_source)
 - [Github with some extra examples](https://github.com/atapas/youtube/tree/main/react)
 - [React oficial documentation](https://react.dev/learn)
-- [React oficial instalation](https://react.dev/learn/installation)
+- [React oficial installation](https://react.dev/learn/installation)
 - [Explication of the virtual DOM](https://dev.to/adityasharan01/react-virtual-dom-explained-in-simple-english-10j6)
 ## Videos or tutorials
 - [Course of react](https://youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR&si=xHSflZELvSFfBF16)
