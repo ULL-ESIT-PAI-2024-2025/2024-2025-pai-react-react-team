@@ -36,20 +36,12 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
   ): void => {
     // Limpiar el canvas
     canvasContext.clearRect(0, 0, canvasWidth, canvasHeight)
-
     // Dibujar la cantidad especificada de cuadrados
     for (let squareIndex = 0; squareIndex < numberOfSquares; squareIndex++) {
-      // Tamaño aleatorio entre 20 y 100 píxeles
       const squareSize = Math.random() * 80 + 20
-
-      // Posición aleatoria dentro del canvas
       const squarePositionX = Math.random() * (canvasWidth - squareSize)
       const squarePositionY = Math.random() * (canvasHeight - squareSize)
-
-      // Color aleatorio
       canvasContext.fillStyle = generateRandomColor()
-
-      // Dibujar el cuadrado
       canvasContext.fillRect(squarePositionX, squarePositionY, squareSize, squareSize)
     }
   }
@@ -60,7 +52,6 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
   useEffect(() => {
     const canvasElement = canvasReference.current
     if (!canvasElement) return
-
     const canvasContext = canvasElement.getContext("2d")
     if (!canvasContext) return
 
