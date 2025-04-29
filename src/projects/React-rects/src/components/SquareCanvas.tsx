@@ -70,5 +70,5 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
     renderSquaresOnCanvas(canvasContext, canvasWidth, canvasHeight)
   }, [numberOfSquares])
 
-  return <canvas ref={canvasReference} width={500} height={400} />
+  return <canvas ref={canvasReference} width={800} height={500} />
 }
