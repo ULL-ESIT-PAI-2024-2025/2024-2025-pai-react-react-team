@@ -11,8 +11,7 @@ const PresentOpener = () => {
     if (!isOpened) {
       setImageSrc(NEW_IMAGE_URL);
       setIsOpened(true);
-    }
-    if (isOpened) {
+    } else {
       setImageSrc(ORIGINAL_IMAGE);
       setIsOpened(false);
     }
