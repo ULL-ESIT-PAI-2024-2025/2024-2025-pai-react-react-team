@@ -1,3 +1,14 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas
+ *
+ * @author Javier Gómez Alayón
+ * @since 01/05/25
+ * @desc Component that draws squares on a canvas element.
+ * 
+ */
 'use client'
 
 import { useRef, useEffect } from 'react'
