@@ -1,3 +1,14 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Asignatura: Programación de Aplicaciones Interactivas
+ * 
+ * @author Sara Darias Sánchez
+ * @date 02/05/2025
+ * @description This file contains the CSS for the App component.
+ * 
+ */
 #root {
   max-width: 1280px;
   margin: 0 auto;
