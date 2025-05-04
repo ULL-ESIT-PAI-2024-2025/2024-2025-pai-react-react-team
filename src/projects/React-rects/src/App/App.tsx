@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
-import { useState, useEffect } from "react"
-import SquareCanvas from "../components/SquareCanvas"
+import { useState, useEffect } from 'react'
+import SquareCanvas from '../components/SquareCanvas'
 
 /**
  * Componente principal de la aplicación.
@@ -20,12 +20,12 @@ export default function SquareDrawingApp() {
    * Solicita al usuario que ingrese el número de cuadrados.
    */
   const requestSquareCountFromUser = () => {
-    const userInputText = prompt("¿Cuántos cuadrados quieres dibujar?")
+    const userInputText = prompt('¿Cuántos cuadrados quieres dibujar?')
     const parsedSquareCount = userInputText ? Number.parseInt(userInputText, 10) : 0
     if (!isNaN(parsedSquareCount) && parsedSquareCount > 0) {
       setSquareCount(parsedSquareCount)
     } else {
-      alert("Por favor ingresa un número válido mayor que 0")
+      alert('Por favor ingresa un número válido mayor que 0')
       setSquareCount(5)
     }
   }

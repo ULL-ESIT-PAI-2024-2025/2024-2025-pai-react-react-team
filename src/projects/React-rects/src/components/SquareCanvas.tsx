@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import { useRef, useEffect } from "react"
+import { useRef, useEffect } from 'react'
 
 /**
  * Props para el componente SquareCanvas.
@@ -20,7 +20,7 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
    * @return {string} Un string con el color generado.
    */
   const generateRandomColor = (): string => {
-    const colors = ["red", "green", "blue", "yellow", "purple", "orange", "pink", "cyan", "magenta", "lime", "teal", "navy", "maroon", "olive", "silver", "gray"]
+    const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'orange', 'pink', 'cyan', 'magenta', 'lime', 'teal', 'navy', 'maroon', 'olive', 'silver', 'gray']
     return colors[Math.floor(Math.random() * colors.length)]
   }
   /**
@@ -50,7 +50,7 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
   useEffect(() => {
     const canvasElement = canvasReference.current
     if (!canvasElement) return
-    const canvasContext = canvasElement.getContext("2d")
+    const canvasContext = canvasElement.getContext('2d')
     if (!canvasContext) return
 
     const canvasWidth = canvasElement.width
