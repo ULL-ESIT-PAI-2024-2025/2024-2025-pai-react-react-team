@@ -21,13 +21,12 @@ export default function SquareDrawingApp() {
    */
   const requestSquareCountFromUser = () => {
     const userInputText = prompt("¿Cuántos cuadrados quieres dibujar?")
-    // Pongo el input como entero.
     const parsedSquareCount = userInputText ? Number.parseInt(userInputText, 10) : 0
     if (!isNaN(parsedSquareCount) && parsedSquareCount > 0) {
       setSquareCount(parsedSquareCount)
     } else {
       alert("Por favor ingresa un número válido mayor que 0")
-      setSquareCount(5) // Valor predeterminado
+      setSquareCount(5)
     }
   }
   return (

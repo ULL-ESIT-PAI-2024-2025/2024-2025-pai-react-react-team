@@ -34,9 +34,7 @@ export default function SquareCanvas({ numberOfSquares }: SquareCanvasProps) {
     canvasWidth: number, 
     canvasHeight: number
   ): void => {
-    // Limpiar el canvas
     canvasContext.clearRect(0, 0, canvasWidth, canvasHeight)
-    // Dibujar la cantidad especificada de cuadrados
     for (let squareIndex = 0; squareIndex < numberOfSquares; squareIndex++) {
       const squareSize = Math.random() * 80 + 20
       const squarePositionX = Math.random() * (canvasWidth - squareSize)

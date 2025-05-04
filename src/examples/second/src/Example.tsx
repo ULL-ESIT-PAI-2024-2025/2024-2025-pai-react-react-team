@@ -1,17 +1,19 @@
 import { useState } from 'react';
 
-function Profile(): JSX.Element {
+function Profile() {
   const [name] = useState<string>("Cristobal");
   const [count, setCount] = useState<number>(0);
 
   return (
-    <div style={{ fontSize: '40px' }}>
-      <p>{name}</p>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(prev => prev + 1)}>
-        Increase
-      </button>
-    </div>
+    <>
+      <div style={{ fontSize: '40px' }}>
+        <p>{name}</p>
+        <p>Count: {count}</p>
+        <button onClick={() => setCount(prev => prev + 1)}>
+          Increase
+        </button>
+      </div>
+    </>
   );
 }
 
